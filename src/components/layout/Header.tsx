@@ -6,6 +6,7 @@ import { Menu, X } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/i18n/routing';
 import { cn } from '@/lib/utils';
+import { X_URL } from '@/lib/social';
 
 const NAV_ITEMS = [
   { href: '/#simulate', key: 'nav_simulate' as const },
@@ -14,6 +15,14 @@ const NAV_ITEMS = [
   { href: '/demo', key: 'nav_demo' as const },
   { href: '/methodology', key: 'nav_methodology' as const },
 ] as const;
+
+function XSocialIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden className={className} fill="currentColor">
+      <path d="M18.9 2h3.3l-7.2 8.2L23.5 22h-6.6l-5.2-6.8L5.8 22H2.5l7.7-8.8L2 2h6.8l4.7 6.2L18.9 2Zm-1.2 17.9h1.8L7.8 4H5.9l11.8 15.9Z" />
+    </svg>
+  );
+}
 
 export function Header() {
   const t = useTranslations('header');
@@ -138,6 +147,17 @@ export function Header() {
                 {t('lang_zh')}
               </button>
             </div>
+
+            <a
+              href={X_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X @hanszeng626"
+              className="inline-flex h-9 shrink-0 items-center justify-center gap-2 rounded-full border border-border bg-bg-1/40 px-3 text-sm font-semibold text-fg-0 transition hover:border-gold/50 hover:text-gold"
+            >
+              <XSocialIcon className="h-3.5 w-3.5" />
+              <span className="hidden lg:inline">@hanszeng626</span>
+            </a>
 
             <button
               type="button"
