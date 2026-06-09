@@ -11,6 +11,7 @@ import { HeaderProfile } from './HeaderProfile';
 
 const NAV_ITEMS = [
   { href: '/#simulate', key: 'nav_simulate' as const },
+  { href: '/prematch', key: 'nav_prematch' as const },
   { href: '/backtest', key: 'backtest' as const, label: 'Backtest' },
   { href: '/demo', key: 'nav_demo' as const },
   { href: '/methodology', key: 'nav_methodology' as const },
@@ -42,7 +43,7 @@ export function Header() {
     };
   }, [menuOpen]);
 
-  const switchLocale = (to: 'es' | 'en') => {
+  const switchLocale = (to: 'es' | 'en' | 'zh') => {
     router.replace(pathname, { locale: to });
   };
 
@@ -127,6 +128,16 @@ export function Header() {
                 aria-label="English"
               >
                 {t('lang_en')}
+              </button>
+              <button
+                onClick={() => switchLocale('zh')}
+                className={cn(
+                  'rounded-full px-2 py-1 text-xs font-medium transition-colors sm:px-3',
+                  locale === 'zh' ? 'bg-gold text-bg-0' : 'text-fg-0/80 hover:text-fg-0',
+                )}
+                aria-label="中文"
+              >
+                {t('lang_zh')}
               </button>
             </div>
 

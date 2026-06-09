@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "updated_at": "2026-06-08T00:00:00.000Z",
+    "note": "Seed cache for prematch reports. Run npm run fetch-prematch to refresh public-source search results."
+  },
+  "fixtures": {
+    "A:0": {
+      "headToHead": {
+        "matches": [
+          {
+            "date": "2010-06-11",
+            "competition": "世界杯小组赛",
+            "home": "South Africa",
+            "away": "Mexico",
+            "score": "1-1",
+            "sourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/2010south-africa"
+          }
+        ],
+        "noteZh": "缓存样本只保留可追溯公开赛事。刷新脚本会补充搜索来源，但不会把无法溯源的结果写入报告。"
+      },
+      "expertPredictions": [
+        {
+          "sourceName": "公开搜索占位",
+          "sourceUrl": "https://www.google.com/search?q=Mexico%20South%20Africa%202026%20World%20Cup%20prediction",
+          "author": "Search aggregate",
+          "publishedAt": "2026-06-08T00:00:00.000Z",
+          "predictionType": "winner",
+          "pick": "home",
+          "scoreline": "1-0",
+          "summaryZh": "当前缓存尚未抓取到可引用的专家原文；该条仅用于提示刷新链路，正式展示应以可追溯来源为准。",
+          "confidence": "low"
+        }
+      ],
+      "teamNews": []
+    }
+  }
+}
+

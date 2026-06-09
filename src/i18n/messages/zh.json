@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Outliners 世界杯 2026 赛前分析",
+    "description": "中文优先的世界杯赛前预测、赔率偏差、专家观点和风险提示仪表盘。"
+  },
+  "header": {
+    "brand": "Outliners · Worldcup 2026",
+    "nav_simulate": "模拟器",
+    "nav_prematch": "赛前分析",
+    "nav_methodology": "方法论",
+    "nav_demo": "市场演示",
+    "nav_about": "关于",
+    "lang_es": "ES",
+    "lang_en": "EN",
+    "lang_zh": "中文",
+    "dev_label": "开发者",
+    "dev_hint": "对这个演示有疑问？可以直接联系。",
+    "dev_telegram": "Telegram",
+    "dev_x": "X / Twitter"
+  },
+  "footer": {
+    "credits": "ELO 数据：eloratings.net · 抽签：FIFA · 赛前信息需以赛前最终名单和官方发布为准",
+    "made_by": "Made by",
+    "methodology_link": "查看方法论",
+    "share": "分享"
+  }
+}

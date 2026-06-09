@@ -162,6 +162,47 @@ body::before {
   border: 1px solid var(--color-border);
 }
 
+.prematch-apple-page {
+  isolation: isolate;
+}
+
+.prematch-apple-backdrop {
+  background:
+    radial-gradient(circle at 50% -10%, oklch(0.76 0.13 180 / 0.10), transparent 38rem),
+    linear-gradient(180deg, oklch(0.16 0.010 195), oklch(0.105 0.007 195) 45%, oklch(0.085 0.005 195));
+}
+
+.prematch-panel {
+  background: linear-gradient(180deg, oklch(1 0 0 / 0.075), oklch(1 0 0 / 0.035));
+  border: 1px solid oklch(1 0 0 / 0.10);
+  box-shadow: 0 1px 0 oklch(1 0 0 / 0.08) inset, 0 28px 80px -36px oklch(0 0 0 / 0.80);
+  backdrop-filter: blur(28px) saturate(140%);
+}
+
+.prematch-panel-soft {
+  background: oklch(1 0 0 / 0.035);
+  border: 1px solid oklch(1 0 0 / 0.075);
+  box-shadow: 0 1px 0 oklch(1 0 0 / 0.05) inset;
+}
+
+.prematch-hairline {
+  border-color: oklch(1 0 0 / 0.08);
+}
+
+.prematch-muted-pill {
+  background: oklch(1 0 0 / 0.045);
+  border: 1px solid oklch(1 0 0 / 0.08);
+}
+
+.prematch-danger-pill {
+  background: oklch(0.65 0.22 18 / 0.08);
+  border: 1px solid oklch(0.65 0.22 18 / 0.18);
+}
+
+.prematch-table-row {
+  border-top: 1px solid oklch(1 0 0 / 0.055);
+}
+
 .scrollbar-none {
   scrollbar-width: none;
   -ms-overflow-style: none;

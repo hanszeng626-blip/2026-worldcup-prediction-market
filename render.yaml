@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: goallens-2026
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 22.16.0
+      - key: ENABLE_REAL_MONEY_TRADING
+        value: "false"

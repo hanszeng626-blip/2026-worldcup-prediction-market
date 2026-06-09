@@ -6,11 +6,13 @@
   "header": {
     "brand": "Outliners · Worldcup 2026",
     "nav_simulate": "Simulate",
+    "nav_prematch": "Prematch",
     "nav_methodology": "Methodology",
     "nav_demo": "Markets & Tickets",
     "nav_about": "About",
     "lang_es": "ES",
     "lang_en": "EN",
+    "lang_zh": "中文",
     "dev_label": "Developer",
     "dev_hint": "Questions about this demo? Reach out directly.",
     "dev_telegram": "Telegram",
